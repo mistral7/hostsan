@@ -9,6 +9,7 @@ Gem::Specification.new do |gem|
   gem.homepage      = ""
 
   gem.add_development_dependency 'test-unit', "~> 2.5.4"
+  gem.add_dependency "slop", "~> 3.4.3"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
