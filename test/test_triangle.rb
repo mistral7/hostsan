@@ -12,4 +12,7 @@ class TestTriangle < Test::Unit::TestCase
     assert_equal('二等辺三角形です', Hostsan::Triangle.determine(3,3,5))
   end
 
+  def test_triangle
+    assert_equal('三角形です', Hostsan::Triangle.determine(2,3,4))
+  end
 end
