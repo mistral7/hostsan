@@ -12,7 +12,9 @@ module Hostsan
       if (side1 == side2 && side2 == side3 && side3 == side1)
         return '正三角形です'
       end
-      # ...
+      if ((side1 == side2)  || (side1 == side3) || (side2 == side3))
+        return '二等辺三角形です'
+      end
     end
   end
 end
