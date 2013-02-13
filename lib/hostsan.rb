@@ -1,4 +1,5 @@
 require "hostsan/version"
+require "slop"
 
 # bundler で入れた gem すべてを $LOAD_PATH に加える
 require 'bundler/setup'
