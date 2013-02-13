@@ -15,4 +15,8 @@ class TestTriangle < Test::Unit::TestCase
   def test_triangle
     assert_equal('三角形です', Hostsan::Triangle.determine(2,3,4))
   end
+
+  def test_not_triangle
+    assert_equal('三角形ではありません', Hostsan::Triangle.determine(3,1,1))
+  end
 end

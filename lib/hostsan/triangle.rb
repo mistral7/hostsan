@@ -9,6 +9,9 @@ module Hostsan
     # ※puts するのではなくて、return (相当) でOK!
     def self.determine(side1, side2, side3)
       # regular triangle case
+      if ((side1 > (side2 + side3)) || (side2 > (side1 + side3)) || (side3 > (side1 + side2)))
+        return '三角形ではありません'
+      end
       if (side1 == side2 && side2 == side3 && side3 == side1)
         return '正三角形です'
       end
