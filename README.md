@@ -6,6 +6,7 @@ hogehoge
 - san
 - tte
 - nani?
+- test
 
 index
 ------
